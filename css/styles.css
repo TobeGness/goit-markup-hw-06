@@ -288,6 +288,7 @@ img {
 
 .clients-items,
 .clients-icons:is(:hover, :focus) {
+  color: var(--color-icon);
 }
 
 /* CLIENTS */
