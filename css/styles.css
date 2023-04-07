@@ -8,6 +8,7 @@
   --color-primary-accent: #2196f3;
   --color-light: #eeeeee;
   --color-border: #ececec;
+  --color-icon: #afb1b8;
 }
 
 *,
@@ -258,6 +259,38 @@ img {
 }
 
 /* TEAM */
+
+/* CLIENTS */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.clients-items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 1170px;
+}
+
+.clients-icons {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+  color: var(--color-icon);
+}
+
+.clients-items,
+.clients-icons:is(:hover, :focus) {
+}
+
+/* CLIENTS */
 
 /* FOOTER */
 
