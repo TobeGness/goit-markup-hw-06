@@ -111,37 +111,37 @@ svg {
   gap: 30px;
 }
 
-.header-icon-email {
-  width: 16px;
+.header-link-email {
   height: 12px;
   fill: var(--color-text);
-}
-
-.header-email {
   color: var(--color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.header-icon-phone {
-  width: 10px;
+.header-link-phone {
   height: 16px;
   fill: var(--color-text);
-}
-
-.header-phone {
   color: var(--color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-menu-item:is(:hover, :focus),
-.header-link-highlight:is(:hover, :focus) {
+.header-link-email:is(:hover, :focus),
+.header-link-phone:is(:hover, :focus) {
   color: var(--color-primary-accent);
+  fill: var(--color-primary-accent);
 }
 
 /* HEADER */
