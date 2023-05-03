@@ -30,7 +30,11 @@
           </a>
           <ul class="header-menu-list">
             <li>
-              <a href="./index.html" class="header-menu-item">Agencja</a>
+              <a
+                href="./index.html"
+                class="header-menu-item header-menu-item-active"
+                >Agencja</a
+              >
             </li>
             <li>
               <a href="./portfolio.html" class="header-menu-item">Portfolio</a>
@@ -61,7 +65,9 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="hero-btn" type="button">Zamów usługę</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
       <section class="section articles">
@@ -122,29 +128,32 @@
         <div class="container">
           <h2 class="services-title">Czym się zajmujemy</h2>
           <ul class="services-items">
-            <li>
+            <li class="services-items-container">
               <img
                 src="images/desk.jpg"
                 alt="dłonie wciskające przyciski na klawiaturze komputerowej na stanowisku biurowym"
                 width="370"
                 height="294"
               />
+              <h3 class="services-items-name">Aplikacje komputerowe</h3>
             </li>
-            <li>
+            <li class="services-items-container">
               <img
                 src="images/laptop.jpg"
                 alt="dwie dłonie, jedna trzyma telefon, druga położona na panelu dotykowym laptopa"
                 width="370"
                 height="294"
               />
+              <h3 class="services-items-name">Aplikacje mobilne</h3>
             </li>
-            <li>
+            <li class="services-items-container">
               <img
                 src="images/tablet.jpg"
                 alt="dwie dłonie, jedna trzyma tableta, druga rysik"
                 width="370"
                 height="294"
               />
+              <h3 class="services-items-name">Rozwiązania graficzne</h3>
             </li>
           </ul>
         </div>
@@ -377,5 +386,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-exit-btn" type="button" data-modal-close>
+          <svg tabindex="0" width="11" height="11">
+            <use href="./images/icons.svg#icon-exit"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
