@@ -641,7 +641,7 @@ svg {
   position: absolute;
   top: 7px;
   right: 9px;
-  padding: 8px 8px 9px 9px;
+  padding: 5px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -649,6 +649,7 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-content: center;
+  justify-content: center;
 }
 
 /* MODAL */
