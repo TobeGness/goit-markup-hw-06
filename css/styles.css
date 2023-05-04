@@ -101,6 +101,9 @@ svg {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -122,6 +125,9 @@ svg {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-phone {
@@ -135,6 +141,9 @@ svg {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-item:is(:hover, :focus),
@@ -142,9 +151,10 @@ svg {
 .header-link-phone:is(:hover, :focus) {
   color: var(--color-primary-accent);
   fill: var(--color-primary-accent);
-  transition-property: fill, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-item-active {
+  color: var(--color-primary-accent);
 }
 
 .header-menu-item-active::after {
@@ -353,15 +363,16 @@ svg {
   padding: 12px;
   fill: var(--color-icon);
   background-color: var(--color-secondary);
+  border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-container:is(:hover, :focus) {
   fill: var(--color-secondary);
   background-color: var(--color-primary-accent);
   border-radius: 50%;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* TEAM */
@@ -391,15 +402,15 @@ svg {
   fill: var(--color-icon);
   padding: 17.71px 32px 14.25px 32px;
   cursor: pointer;
+  transition-property: fill, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon:is(:hover, :focus) {
   fill: var(--color-primary-accent);
   border-color: var(--color-primary-accent);
   color: var(--color-primary-accent);
-  transition-property: fill, border-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* CLIENTS */
@@ -448,13 +459,13 @@ svg {
   font-size: 14px;
   line-height: 1.7142;
   margin-top: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:is(:hover, :focus) {
   color: var(--color-primary-accent);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-join {
@@ -482,14 +493,14 @@ svg {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-container:is(:hover, :focus) {
   background-color: var(--color-primary-accent);
   border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -524,6 +535,9 @@ svg {
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filters-btn:is(:hover, :focus) {
@@ -531,9 +545,6 @@ svg {
   color: var(--color-secondary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-projects {
@@ -567,17 +578,23 @@ svg {
   overflow: hidden;
 }
 
-.portfolio-projects-card:is(:hover, :focus) {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-projects-card {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-projects-card:is(:hover, :focus) {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portoflio-projects-hover .portfolio-projects-overlay {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portoflio-projects-hover:is(:hover, :focus) .portfolio-projects-overlay {
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-projects-overlay {
@@ -600,7 +617,7 @@ svg {
 /* MODAL */
 
 .backdrop {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   right: 0;
