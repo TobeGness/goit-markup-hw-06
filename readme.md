@@ -1,1 +1,1 @@
-https://tobegness.github.io/goit-markup-hw-05/
+https://tobegness.github.io/goit-markup-hw-06/

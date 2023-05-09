@@ -384,6 +384,25 @@
             </li>
           </ul>
         </div>
+        <form class="newsletter-form">
+          <label class="newsletter-form-label" for="newsletter-form-email"
+            >Zapisz się do newslettera</label
+          >
+          <div class="newsletter-form-wrapper">
+            <input
+              class="newsletter-form-email"
+              type="email"
+              id="newsletter-form-email"
+              placeholder="E-mail"
+            />
+            <button class="newsletter-form-btn" type="submit">
+              Zapisz się
+              <svg class="icon-sendform" width="24" height="24">
+                <use href="./images/icons.svg#icon-sendform"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -393,6 +412,67 @@
             <use href="./images/icons.svg#icon-exit"></use>
           </svg>
         </button>
+        <form class="order-form">
+          <p class="order-form-title">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="order-form-label" for="order-username"
+            >Imię
+            <div class="order-input-group">
+              <svg class="order-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-personform"></use>
+              </svg>
+              <input class="order-form-input" id="order-username" type="text" />
+            </div>
+          </label>
+          <label class="order-form-label order-form-spacing" for="order-phone"
+            >Telefon
+            <div class="order-input-group">
+              <svg class="order-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phoneform"></use>
+              </svg>
+              <input class="order-form-input" id="order-phone" type="tel" />
+            </div>
+          </label>
+          <label class="order-form-label order-form-spacing" for="order-email"
+            >Email
+            <div class="order-input-group">
+              <svg class="order-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-emailform"></use>
+              </svg>
+              <input class="order-form-input" id="order-email" type="email" />
+            </div>
+          </label>
+          <label
+            class="order-form-comment order-form-spacing"
+            for="order-comment"
+          >
+            Komentarz
+            <textarea
+              id="order-comment"
+              class="order-form-comment-area"
+              name="comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <div class="order-form-consent">
+            <input
+              class="order-consent-input"
+              id="order-consent"
+              type="checkbox"
+              name="order-consent"
+            />
+            <label class="order-consent-label" for="order-consent">
+              <svg class="icon-check" width="11" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </label>
+            <span class="order-consent-text"
+              >Oświadczam iż akceptuję
+              <a class="consent-text-accent">Regulamin</a> i
+              <a class="consent-text-accent">Politykę Prywatności.</a>
+            </span>
+          </div>
+          <button class="order-form-btn" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
